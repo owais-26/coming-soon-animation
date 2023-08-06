@@ -1,0 +1,16 @@
+
+
+#root{
+  position: absolute;
+}
+.absolute{
+  position: absolute;
+  z-index: 9999;
+}
+canvas{
+  background: transparent;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
