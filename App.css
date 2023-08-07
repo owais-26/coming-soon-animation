@@ -1,16 +1,89 @@
-
-
-#root{
+#root {
   position: absolute;
 }
-.absolute{
+.absolute {
   position: absolute;
   z-index: 9999;
 }
-canvas{
+canvas {
   background: transparent;
 }
-*{
+* {
   margin: 0;
   padding: 0;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: slide 1s ease-out 0.5s both;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: slide 1s ease-out 0.5s both;
+}
+.coming-soon {
+  font-family: "Gothic", sans-serif;
+  font-size: 3rem;
+  color: #333;
+  animation: rotateAnimation 3s infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.svgbg {
+  background: url("animate.svg");
+  display: block;
+}
+.custom-animation {
+  animation-duration: 3s !important;
+}
+
+.delayed-animation {
+  animation-delay: 5s !important; /* Delay the animation start by 2 seconds */
+  animation-duration: 2s !important; /* Set the animation duration */
+}
+@keyframes fadeInWithDelay {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.custom-animation {
+  animation-duration: 3s;
+}
+
+.delayed-animation {
+  animation: fadeInWithDelay 1s ease-in-out 5s both; /* Adjust the delay (5s) as needed */
 }

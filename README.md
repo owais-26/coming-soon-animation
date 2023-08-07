@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 ![Final Result](https://github.com/owais-26/coming-soon-animation/blob/main/public/final.jpg)
 
 ## Available Scripts

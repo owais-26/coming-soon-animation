@@ -20,13 +20,13 @@ function Home() {
             tl.add('begin');
             tl.to('#reel1', 1, {
                 rotation: 360,
-                repeat: 12,
+                repeat: -1, // Infinite repetition
                 svgOrigin: '131.5 109',
                 ease: Linear.easeNone
             }, 'begin');
             tl.to('#reel2', 3, {
                 rotation: 360,
-                repeat: 4,
+                repeat: -1, // Infinite repetition
                 svgOrigin: '61 125',
                 ease: Linear.easeNone
             }, 'begin');
@@ -42,9 +42,9 @@ function Home() {
                 opacity: 0,
                 ease: Sine.easeOut
             }, 'begin+=5');
-            tl.to('#projector', 3, {
+            tl.to('#projector', 5, {
                 rotation: 3,
-                repeat: 4,
+                repeat: 10,
                 yoyo: true,
                 svgOrigin: '90 218',
                 ease: Bounce.easeInOut
@@ -134,7 +134,7 @@ function Home() {
                 <title>
                     gsapplayer
                 </title>
-                <path id="bk" fill="url(#radial-gradient)" d="M5 0H424.5V283H5z" opacity="0.5" />
+                <path id="bk" fill="url(#radial-gradient)" d="M5 0H424.5V283H5z" opacity="0" />
                 <g id="shadow" fill="#12171f">
                     <path d="M63.8 222L62.9 222.6 62.8 222.5 63.8 221.8 63.8 222z" />
                     <path d="M65.5 222L64.6 222.6 64.5 222.5 65.5 221.8 65.5 222z" />
@@ -629,17 +629,39 @@ function Home() {
                     <path id="film2" d="M141.7,180.8c-2,.4-4.5-.1-7.4-1.4a129.9,129.9,0,0,1-17.5-9.5c-4.5-2.9-6.6-4.2-10.1-3.6h0a5.1,5.1,0,0,0-1.5.7c-1.2.7-2.8,1.7-4.8.6s-2.2-2.6-2.5-4a5.5,5.5,0,0,0-.5-1.7c-1.5-2.6-8.2-3.2-16.6-6.3s-19.2-9.3-28.8-15l.2-.3c9.5,5.7,20.1,11.8,28.7,15s15.2,3.7,16.8,6.5a5.7,5.7,0,0,1,.5,1.8c.2,1.3.5,2.8,2.3,3.7s3.2.1,4.4-.6a5.3,5.3,0,0,1,1.6-.8h0c3.6-.7,5.9.8,10.4,3.6a129.6,129.6,0,0,0,17.4,9.5c4,1.8,7.3,2,9.3.4s2.3-3.8,1.7-6.8c-1-5.6-4.3-22.5-4.4-22.6-.4-2.2-1.6-3.8-3.2-4.5s-3.5-.3-5.4,1.1a79.3,79.3,0,0,0-7.8,6.7c-3.6,3.4-7.3,6.8-11.6,9.3s-5.5,1.9-6,1.6a3.3,3.3,0,0,1-1.2-1.5,4.4,4.4,0,0,0-2.4-2.4,4.2,4.2,0,0,0-2.4-.1,3.6,3.6,0,0,1-2.2-.1,3.2,3.2,0,0,1-1.9-2.3c-.9-3.9-2.5-10.7-.3-14.4a18.8,18.8,0,0,1,12.1-8.9l28.2-2.4v.4L109,135.1c-4.3.8-9,4.2-12,9s-.4,9.9.4,13.7a2.8,2.8,0,0,0,1.6,2,3.2,3.2,0,0,0,2,.1,4.6,4.6,0,0,1,2.6.1,4.8,4.8,0,0,1,2.6,2.6,3,3,0,0,0,1,1.3c.4.2,1.8.6,5.7-1.6s7.9-5.9,11.5-9.3a79.6,79.6,0,0,1,7.8-6.8c2-1.4,4-1.8,5.8-1.1s3,2.4,3.4,4.8c0,.2,3.3,17,4.4,22.6.6,3.2-.1,5.8-1.9,7.2a5.3,5.3,0,0,1-2.3,1Z" transform="translate(-.5)" fill="#f2f2f4" />
                 </g>
                 <ellipse id="lightcirc" cx="341.4" cy="130.5" rx="94.7" ry="122.1" transform="rotate(-16.3 340.93 132.2)" fill="url(#radial-gradient-2)" />
-                <g id="textlight" opacity="0.39" fill="#cc2017">
-
-
+                <g id="textlight" opacity="0.39" fill="#0074D9">
+                
                 </g>
-                <g id="textdark">
+                
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
-                        <text x="143" y="50" font-family="Gotham, sans-serif" font-size="16" fill="black" text-anchor="middle">Coming Soon</text>
+                <g id="textdark" >
+                    <svg
+                        data-aos="zoom-in"
+                        data-aos-delay="1000"
+                        
+                        data-aos-easing="ease-out-cubic"
+                        // className="animate__animated animate__fadeIn custom-animation delayed-animation"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 200 100"
+                    >
+                        <text
+                            data-aos="zoom-in"
+                            data-aos-delay="2000"
+                            data-aos-easing="ease-out-cubic"
+                            className=""
+                            x="145"
+                            y="50"
+                            fontFamily="Gotham, sans-serif"
+                            fontSize="16"
+                            fill="white"
+                            textAnchor="middle"
+                        >
+                            Coming Soon
+                        </text>
                     </svg>
-
                 </g>
+                
+                          
                 <g id="base">
                     <path transform="translate(-.95 .19)" fill="#12171f" d="M91.3 220.1H96.1V222.69H91.3z" />
                     <g fill="#db3b2e">
@@ -664,7 +686,7 @@ function Home() {
                 </g>
             </svg>
 
-            
+
         </div>
     );
 }
