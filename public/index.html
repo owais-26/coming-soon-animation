@@ -11,7 +11,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -30,13 +30,14 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-       background-image: url('bg2.svg');
-  background-size: cover;
-  background-position: center;
-
+       background: rgb(9,38,71);
+background: linear-gradient(75deg, rgba(9,38,71,1) 0%, rgba(14,73,142,1) 50%, rgba(9,38,71,1) 100%);
   
         
       }
+      .logo{
+  position: relative !important;
+}
       body {
         margin: 0;
         padding: 0;
@@ -51,10 +52,11 @@
         display: none;
       }
     </style>
-    <title>MUI</title>
+    <title>CineCare</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+     <img src="logo.png" alt="" className='logo' width={150} />
     <div id="root"></div>
      <audio
       class="pop"

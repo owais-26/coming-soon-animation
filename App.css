@@ -87,3 +87,11 @@ canvas {
 .delayed-animation {
   animation: fadeInWithDelay 1s ease-in-out 5s both; /* Adjust the delay (5s) as needed */
 }
+.logo{
+  /* display: block; */
+  /* position: absolute !important; */
+  /* width: 10rem!important; */
+  width: 100px !important;
+background: rgb(9,38,71);
+background: linear-gradient(75deg, rgba(9,38,71,1) 0%, rgba(14,73,142,1) 50%, rgba(9,38,71,1) 100%);
+}
